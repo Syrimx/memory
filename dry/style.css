@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+img {
+	width:128px;
+	height:256px;
+}
+
+section {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height:100vh;
+}
+
+.grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap:2em;
+	background:url(img/Bubbles.mp4);
+}
+
+video {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	opacity:01;
+}
+
+button {
+	background:#333;
+	color:#fff;
+	width:3em;
+	height:2em;
+}
